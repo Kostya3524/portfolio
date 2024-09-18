@@ -6,17 +6,27 @@ import {
   FaFigma,
   FaHtml5,
   FaJs,
+  FaPhp,
   FaReact,
+  FaVuejs,
   FaWordpress,
+  FaPython,
+  FaLaravel,
+  FaNodeJs,
+  FaShopify,
 } from "react-icons/fa";
 import {
   SiAdobephotoshop,
   SiAdobexd,
-  SiFramer,
+  SiMui,
+  SiAntdesign,
+  SiTailwindcss,
   SiNextdotjs,
+  SiNuxtdotjs,
+  SiSvelte,
+  SiDjango,
 } from "react-icons/si";
 
-import Avatar from "../../components/Avatar";
 import Circles from "../../components/Circles";
 import { fadeIn } from "../../variants";
 
@@ -26,33 +36,112 @@ export const aboutData = [
     title: "skills",
     info: [
       {
-        title: "Web Development",
-        icons: [
-          FaHtml5,
-          FaCss3,
-          FaJs,
-          FaReact,
-          SiNextdotjs,
-          SiFramer,
-          FaWordpress,
+        title: <p>Language & Framework</p>,
+        data: [
+          {
+            text: "HTML",
+            icon: <FaHtml5 />
+          },
+          {
+            text: "CSS",
+            icon: <FaCss3 />
+          },
+          {
+            text: "Javascript",
+            icon: <FaJs />
+          },
+          {
+            text: "PHP",
+            icon: <FaPhp />
+          },
+          {
+            text: "React",
+            icon: <FaReact />
+          },
+          {
+            text: "Vue",
+            icon: <FaVuejs />
+          },
+          {
+            text: "Next",
+            icon: <SiNextdotjs />
+          },
+          {
+            text: "Nuxt",
+            icon: <SiNuxtdotjs />
+          },
+          {
+            text: "Svelte",
+            icon: <SiSvelte />
+          },
+          {
+            text: "Mui",
+            icon: <SiMui />
+          },
+          {
+            text: "Tailwind css",
+            icon: <SiTailwindcss />
+          },
+          {
+            text: "Antd",
+            icon: <SiAntdesign />
+          },
+          {
+            text: "WordPress",
+            icon: <FaWordpress />
+          },
+          {
+            text: "Python",
+            icon: <FaPython />
+          },
+          {
+            text: "Django",
+            icon: <SiDjango />
+          },
+          {
+            text: "Laravel",
+            icon: <FaLaravel />
+          },
+          {
+            text: "Node",
+            icon: <FaNodeJs />
+          },
+          {
+            text: "Shopify",
+            icon: <FaShopify />
+          },
+          
         ],
       },
       {
         title: "UI/UX Design",
-        icons: [FaFigma, SiAdobexd, SiAdobephotoshop],
+        data: [
+          {
+            text: "Figma",
+            icon: <FaFigma />
+          },
+          {
+            text: "XD",
+            icon: <SiAdobexd />
+          },
+          {
+            text: "Photoshop",
+            icon: <SiAdobephotoshop />
+          }
+        ],
       },
     ],
   },
   {
-    title: "awards",
+    title: "Certification",
     info: [
       {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
+        title: "Advanced CSS and Sass: Flexbox, Grid, Animations and More!",
+        stage: "2018 - 2019",
       },
       {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
+        title: "Complete React Developer in 2019 (Redux, Hooks, GraphQL)",
+        stage: "2019 - 2020",
       },
     ],
   },
@@ -60,34 +149,26 @@ export const aboutData = [
     title: "experience",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
+        title: "Senior Frontend Developer - Uniserve IT Solutions",
+        stage: "2021 - 2023",
       },
       {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
+        title: "Frontend Developer - JET IT Services",
+        stage: "2021 - 2023",
       },
       {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
+        title: "Junior Web Developer - Digital Creative Asia",
+        stage: "2018 - 2020",
       },
     ],
   },
   {
-    title: "credentials",
+    title: "Education",
     info: [
       {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
-      },
-      {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
-      },
-      {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
-      },
+        title: " National Aerospace University",
+        stage: "2014-2017",
+      }
     ],
   },
 ];
@@ -99,18 +180,7 @@ const About = () => {
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
       <Circles />
 
-      {/* avatar img */}
-      <motion.div
-        variants={fadeIn("right", 0.2)}
-        initial="hidden"
-        animate="show"
-        exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[370px]"
-      >
-        <Avatar />
-      </motion.div>
-
-      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+      <div className="w-full xl:container xl:mt-[8%] mx-auto flex flex-col items-center xl:items-start xl:flex-row gap-x-6">
         {/* text */}
         <div className="flex-1 flex flex-col justify-center">
           <motion.h2
@@ -120,8 +190,7 @@ const About = () => {
             exit="hidden"
             className="h2"
           >
-            Captivating <span className="text-accent">stories</span> birth
-            magnificent designs.
+            About <span className="text-accent">Me</span>
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
@@ -129,7 +198,7 @@ const About = () => {
             animate="show"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            10 years ago, I begin freelancing as a developer. Since then, I've
+            5 years ago, I begin freelancing as a developer. Since then, I've
             done remote work for agencies, consulted for startups, and
             collabrated on digital products for business and consumer use.
           </motion.p>
@@ -145,7 +214,7 @@ const About = () => {
               {/* experience */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={10} duration={5} />
+                  <CountUp start={0} end={5} duration={1} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Years of experience.
@@ -155,7 +224,7 @@ const About = () => {
               {/* clients */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={250} duration={5} />
+                  <CountUp start={0} end={100} duration={5} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Satisfied clients.
@@ -165,7 +234,7 @@ const About = () => {
               {/* projects */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={650} duration={5} />
+                  <CountUp start={0} end={120} duration={5} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Finished projects.
@@ -197,10 +266,9 @@ const About = () => {
             {aboutData.map((item, itemI) => (
               <div
                 key={itemI}
-                className={`${
-                  index === itemI &&
+                className={`${index === itemI &&
                   "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
-                } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
+                  } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
                 onClick={() => setIndex(itemI)}
               >
                 {item.title}
@@ -208,22 +276,27 @@ const About = () => {
             ))}
           </div>
 
-          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
+          <div className="py-2 xl:py-6 flex flex-col gap-y-6 items-center xl:items-start w-full">
             {aboutData[index].info.map((item, itemI) => (
               <div
                 key={itemI}
-                className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-center text-white/60"
+                className="w-full flex-1 flex flex-col xl:flex-row max-w-max gap-2 items-center text-center text-white/60"
               >
                 {/* title */}
                 <div className="font-light mb-2 md:mb-0">{item.title}</div>
-                <div className="hidden md:flex">-</div>
+                <div className="hidden xl:flex">-</div>
                 <div>{item.stage}</div>
 
-                <div className="flex gap-x-4">
+                <div className="grid grid-cols-4 md:grid-cols-6 gap-4 flex-wrap">
                   {/* icons */}
-                  {item.icons?.map((Icon, iconI) => (
-                    <div key={iconI} className="text-2xl text-white">
-                      <Icon />
+                  {item.data?.map((skill, index) => (
+                    <div key={index} className="text-2xl flex flex-col items-center text-white">
+                      <div>
+                        {skill.icon}
+                      </div>
+                      <div className="text-sm">
+                        {skill.text}
+                      </div>
                     </div>
                   ))}
                 </div>

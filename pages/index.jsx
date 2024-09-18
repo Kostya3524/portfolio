@@ -11,18 +11,17 @@ const Home = () => {
     <div className="bg-primary/60 h-full">
       {/* text */}
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
-        <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
+        <div className="text-center flex flex-col justify-center pt-72 xl:pt-40 xl:text-left h-full container mx-auto">
           {/* title */}
-          <motion.h1
+          <motion.h3
             variants={fadeIn("down", 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
             className="h1"
           >
-            Transforming Ideas <br /> Into{" "}
-            <span className="text-accent">Digital Reality</span>
-          </motion.h1>
+            <span className="text-accent" style={{ fontSize: 24 }}>MERN | E-Commerce | PHP developer</span>
+          </motion.h3>
 
           {/* subtitle */}
           <motion.p
@@ -30,12 +29,15 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+            className="md:max-w-[40vw] mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate,
-            exercitationem harum, quia nulla temporibus deleniti libero veniam
-            vero beatae numquam ducimus illum ab similique ipsam tempore fugit
-            quod laudantium debitis.
+             &nbsp; I am a senior full-stack developer with over 5 years of experience in software development across various industries, with
+            the 3 most recent years focused on MERN,E-Commerce, and Laravel.
+            <br />&nbsp;✔ I have worked with MERN stack since 2018, building various websites and applications using React, Redux,Vue, MUI, Antd, Tailwind CSS, Laravel, Node, and Django.
+            <br />&nbsp;✔ Also, as a skilled WooCommerce and Shopify expert, I have attended various supermartket, Store, and CMS project development.
+            <br />&nbsp;&nbsp;So through this process, I have plenty of experience in custom plugin, Theme customization, UI/UX(Elementor, UX Builder), Third-party API, MailMarketing, SMS, AWS and plugin integration, Payment gateway integration and attractive web design.
+            <br />&nbsp;Not only that, but I have always been a quick learner, so I can quickly adapt to new things.
+            <br />&nbsp;Furthermore, I always provide the best solution and optimize with strong problem-solving and troubleshooting skills.
           </motion.p>
 
           {/* btn */}
@@ -72,7 +74,7 @@ const Home = () => {
           animate="show"
           exit="hidden"
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]"
+          className="w-full h-full max-w-[300px] max-h-[300px] absolute top-[40%] lg:right-[25%]"
         >
           <Avatar />
         </motion.div>

@@ -1,45 +1,30 @@
 import Link from "next/link";
 
 import {
-  RiYoutubeLine,
-  RiInstagramLine,
-  RiFacebookLine,
-  RiDribbbleLine,
-  RiGithubLine,
-  RiPinterestLine,
+  RiTelegramFill,
+  RiSkypeFill,
+  RiGithubFill,
+  RiWhatsappFill,
+  RiLinkedinFill
 } from "react-icons/ri";
 
 export const socialData = [
+  
   {
-    name: "YouTube",
-    link: "https://youtube.com",
-    Icon: RiYoutubeLine,
-  },
-  {
-    name: "Instagram",
-    link: "https://instagram.com",
-    Icon: RiInstagramLine,
-  },
-  {
-    name: "Facebook",
-    link: "https://facebook.com",
-    Icon: RiFacebookLine,
-  },
-  {
-    name: "Dribbble",
-    link: "https://dribbble.com",
-    Icon: RiDribbbleLine,
-  },
-  {
-    name: "Pinterest",
-    link: "https://pinterest.com",
-    Icon: RiPinterestLine,
+    name: "WhatsApp",
+    link: "+380986403919",
+    Icon: RiGithubFill,
   },
   {
     name: "Github",
-    link: "https://github.com/sanidhyy/modern-portfolio",
-    Icon: RiGithubLine,
+    link: "https://github.com/codestar3524",
+    Icon: RiGithubFill,
   },
+  {
+    name: "Skype",
+    link: "live:.cid.4bff53152f3d85b2",
+    Icon: RiSkypeFill,
+  }
 ];
 
 const Socials = () => {
@@ -52,13 +37,9 @@ const Socials = () => {
           href={social.link}
           target="_blank"
           rel="noreferrer noopener"
-          className={`${
-            social.name === "Github"
-              ? "bg-accent rounded-full p-[5px] hover:text-white"
-              : "hover:text-accent"
-          } transition-all duration-300`}
+          className={`hover:text-accent transition-all duration-300`}
         >
-          <social.Icon aria-hidden />
+          <social.Icon aria-hidden className="text-2xl"/>
           <span className="sr-only">{social.name}</span>
         </Link>
       ))}

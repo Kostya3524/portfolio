@@ -32,7 +32,7 @@ const ParticlesContainer = () => {
             },
             onHover: {
               enable: true,
-              mode: "repulse",
+              mode: "attract",
             },
             resize: true,
           },
