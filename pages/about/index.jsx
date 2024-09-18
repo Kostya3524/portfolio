@@ -177,10 +177,10 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+    <div className="h-full bg-primary/30 xl:py-32 text-center xl:text-left">
       <Circles />
 
-      <div className="w-full xl:container xl:mt-[8%] mx-auto flex flex-col items-center xl:items-start xl:flex-row gap-x-6">
+      <div className="w-full xl:w-[70%] xl:mt-[8%] mx-auto flex flex-col items-center xl:items-start xl:flex-row gap-x-6">
         {/* text */}
         <div className="flex-1 flex flex-col justify-center">
           <motion.h2
@@ -280,7 +280,7 @@ const About = () => {
             {aboutData[index].info.map((item, itemI) => (
               <div
                 key={itemI}
-                className="w-full flex-1 flex flex-col xl:flex-row max-w-max gap-2 items-center text-center text-white/60"
+                className="w-full flex-1 flex flex-col xl:flex-row xl:max-w-max gap-2 items-center text-center text-white/60"
               >
                 {/* title */}
                 <div className="font-light mb-2 md:mb-0">{item.title}</div>

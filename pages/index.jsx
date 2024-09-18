@@ -11,15 +11,16 @@ const Home = () => {
     <div className="bg-primary/60 h-full">
       {/* text */}
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
-        <div className="w-[80%] text-center flex flex-col justify-center md:pl-32 pt-22 xl:pt-40 xl:text-left h-full container mx-auto">
+        <div className="w-[80%] text-left flex flex-col xl:justify-center md:pl-32 pt-22 xl:pt-40 h-full container mx-auto">
           {/* title */}
           <motion.h3
             variants={fadeIn("down", 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h1"
+            className="h1 mb-0"
           >
+            <p className="text-neutral-300" style={{ fontSize: 34 }}>Kostiantyn Lytvynov</p><br/>
             <span className="text-accent" style={{ fontSize: 24 }}>MERN | E-Commerce | PHP developer</span>
           </motion.h3>
 
@@ -31,7 +32,7 @@ const Home = () => {
             exit="hidden"
             className="md:max-w-full xl:max-w-[40vw] mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-             &nbsp; I am a senior full-stack developer with over 5 years of experience in software development across various industries, with
+            &nbsp; I am a senior full-stack developer with over 5 years of experience in software development across various industries, with
             the 3 most recent years focused on MERN,E-Commerce, and Laravel.
             <br />&nbsp;✔ I have worked with MERN stack since 2018, building various websites and applications using React, Redux,Vue, MUI, Antd, Tailwind CSS, Laravel, Node, and Django.
             <br />&nbsp;✔ Also, as a skilled WooCommerce and Shopify expert, I have attended various supermartket, Store, and CMS project development.
