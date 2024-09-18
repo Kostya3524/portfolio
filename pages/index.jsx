@@ -11,7 +11,7 @@ const Home = () => {
     <div className="bg-primary/60 h-full">
       {/* text */}
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
-        <div className="text-center flex flex-col justify-center pt-72 xl:pt-40 xl:text-left h-full container mx-auto">
+        <div className="w-[80%] text-center flex flex-col justify-center md:pl-32 pt-22 xl:pt-40 xl:text-left h-full container mx-auto">
           {/* title */}
           <motion.h3
             variants={fadeIn("down", 0.2)}
@@ -29,7 +29,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="md:max-w-[40vw] mx-auto xl:mx-0 mb-10 xl:mb-16"
+            className="md:max-w-full xl:max-w-[40vw] mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
              &nbsp; I am a senior full-stack developer with over 5 years of experience in software development across various industries, with
             the 3 most recent years focused on MERN,E-Commerce, and Laravel.
@@ -74,7 +74,7 @@ const Home = () => {
           animate="show"
           exit="hidden"
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="w-full h-full max-w-[300px] max-h-[300px] absolute top-[40%] lg:right-[25%]"
+          className="w-full h-full max-w-[300px] max-h-[300px] absolute top-[30%] lg:right-[10%] -translate-x-[50%] -translate-y-[50%]"
         >
           <Avatar />
         </motion.div>

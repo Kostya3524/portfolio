@@ -33,8 +33,8 @@ const Nav = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="flex flex-col items-center xl:justify-center gap-y-4 fixed h-max bottom-0 mt-auto xl:right-[1%] z-50 top-0 w-full xl:w-auto xl:max-w-md xl:h-screen">
-      <div className="flex w-full xl:flex-col items-start justify-between xl:justify-center gap-y-10 px-4 md:px-40 xl:px-0 h-[80px] xl:h-max p-4 bg-white/10 backdrop-blur-sm text-3xl xl:text-xl xl:rounded-lg">
+    <nav className="flex flex-col items-center xl:justify-center gap-y-4 fixed h-max bottom-0 mt-auto xl:left-[1%] z-50 top-0 w-full xl:w-auto xl:h-screen">
+      <div className="flex w-full xl:flex-col items-start justify-between xl:justify-center gap-y-10 px-4 md:px-40 xl:px-0 h-[80px] xl:h-min p-4 bg-white/10 backdrop-blur-sm text-3xl xl:text-xl xl:rounded-lg">
         {navData.map((link, i) => (
           <Link
             className={`${
