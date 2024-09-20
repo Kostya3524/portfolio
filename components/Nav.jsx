@@ -50,7 +50,7 @@ const Nav = () => {
             <div>
               <link.Icon aria-hidden className="text-2xl"/>
             </div>
-            <div className="ml-5 text-sm hidden xl:block">
+            <div className="ml-5 text-sm hidden lg:block">
               {link.name}
             </div>
           </Link>
