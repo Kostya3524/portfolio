@@ -132,7 +132,7 @@ const WorkSlider = () => {
                       className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]"
                     >
                       <div className="translate-y-[50%] group-hover:translate-y-[-150%] transition-all duration-300 delay-150">
-                        {image.link.substring(8, image.link.length)}
+                        {image.link.length > 20 ? image.link.substr(8,20) + "..." : image.link.substr(8,20)}
                       </div>
                       <div className="text-xl translate-y-[50%] group-hover:translate-y-[-150%] transition-all duration-300 delay-150">
                         <BsArrowRight aria-hidden />
