@@ -40,9 +40,9 @@ const workSlides = {
     {
       images: [
         {
-          title: "WooCommerce",
+          title: "React Native",
           path: "/portfolio/p5.jpg",
-          link: "https://www.aliexpress.com",
+          link: "https://play.google.com/store/apps/details?id=com.groovsense",
         },
         {
           title: "React, Web3",
