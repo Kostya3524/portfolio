@@ -20,7 +20,7 @@ const Home = () => {
             exit="hidden"
             className="h1 mb-0"
           >
-            <span className="text-neutral-300" style={{ fontSize: 34 }}>Lin Faung</span><br/>
+            <span className="text-neutral-300" style={{ fontSize: 34 }}></span><br/>
             <span className="text-accent" style={{ fontSize: 24 }}>MERN | E-Commerce | PHP developer</span>
           </motion.h3>
 
