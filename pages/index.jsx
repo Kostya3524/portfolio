@@ -20,8 +20,9 @@ const Home = () => {
             exit="hidden"
             className="h1 mb-0"
           >
-            <span className="text-neutral-300" style={{ fontSize: 34 }}></span><br/>
-            <span className="text-accent" style={{ fontSize: 24 }}>MERN | E-Commerce | PHP developer</span>
+            <span className="text-neutral-300" style={{ fontSize: 34 }}></span><br />
+            <h3 className="text-white" style={{ fontSize: 32 }}>MAKSYM HAYOVETS</h3>
+            <span className="text-accent" style={{ fontSize: 24 }}>MERN | CMS | blockchain | PHP developer</span>
           </motion.h3>
 
           {/* subtitle */}
@@ -30,15 +31,13 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="md:max-w-full xl:max-w-[40vw] mx-auto xl:mx-0 mb-10 xl:mb-16"
+            className="md:max-w-full xl:max-w-[40vw] h-[100vh - 200px] md:h-full mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            &nbsp; I am a senior full-stack developer with over 5 years of experience in software development across various industries, with
-            the 3 most recent years focused on MERN,E-Commerce, and Laravel.
-            <br />&nbsp;✔ I have worked with MERN stack since 2018, building various websites and applications using React, Redux,Vue, MUI, Antd, Tailwind CSS, Laravel, Node, and Django.
-            <br />&nbsp;✔ Also, as a skilled WooCommerce and Shopify expert, I have attended various supermartket, Store, and CMS project development.
-            <br />&nbsp;&nbsp;So through this process, I have plenty of experience in custom plugin, Theme customization, UI/UX(Elementor, UX Builder), Third-party API, MailMarketing, SMS, AWS and plugin integration, Payment gateway integration and attractive web design.
-            <br />&nbsp;Not only that, but I have always been a quick learner, so I can quickly adapt to new things.
-            <br />&nbsp;Furthermore, I always provide the best solution and optimize with strong problem-solving and troubleshooting skills.
+            Hi, I’m a senior full-stack developer with over 5 years of experience building cutting-edge web and mobile applications. I specialize in creating clean, efficient, and scalable solutions using modern technologies like React, Vue, Next.js, Laravel, Node.js, and TailwindCSS.
+
+            With expertise in frameworks like Django and tools like Three.js, I’ve delivered innovative projects across industries, including Web3, CMS development, and custom chatbot solutions. My approach focuses on problem-solving, adaptability, and delivering results that exceed expectations.
+
+            Let’s collaborate and turn your ideas into reality! 🚀
           </motion.p>
 
           {/* btn */}

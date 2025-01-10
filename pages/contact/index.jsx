@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { BsArrowRight } from "react-icons/bs";
+import { BsArrowRight, BsTelegram, BsWhatsapp, BsLinkedin } from "react-icons/bs";
 
 import { fadeIn } from "../../variants";
 import { useState } from "react";
@@ -28,7 +28,7 @@ const Contact = () => {
     <div className="h-full bg-primary/30">
       <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
         {/* text & form */}
-        <div className="flex flex-col w-full max-w-[700px]">
+        <div className="flex flex-col w-full max-w-[700px] justify-center align-middle">
           {/* text */}
           <motion.h2
             variants={fadeIn("up", 0.2)}
@@ -39,9 +39,10 @@ const Contact = () => {
           >
             Let's <span className="text-accent">connect.</span>
           </motion.h2>
-
-          {/* form */}
-          <motion.form
+          <a href="https://www.linkedin.com/in/maksym-hayovets-b07017162/" className="flex items-center gap-2 text-2xl"><BsLinkedin /><span>maksym-hayovets-b07017162</span></a>
+          <a href="https://t.me/maks_hayovets" className="flex items-center gap-2 text-2xl"><BsTelegram /><span>@maks_hayovets</span></a>
+          <a href="https://wa.me/380683905893?text=Hello" className="flex items-center gap-2 text-2xl"><BsWhatsapp /><span>+380683905893</span></a>
+          {/* <motion.form
             variants={fadeIn("up", 0.4)}
             initial="hidden"
             animate="show"
@@ -53,7 +54,6 @@ const Contact = () => {
             // only needed for production (in netlify) to accept form input
             data-netlify="true"
           >
-            {/* input group */}
             <div className="flex gap-x-6 w-full">
               <input
                 type="text"
@@ -110,7 +110,8 @@ const Contact = () => {
                 aria-hidden
               />
             </button>
-          </motion.form>
+          </motion.form> */}
+
         </div>
       </div>
     </div>

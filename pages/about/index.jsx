@@ -166,8 +166,9 @@ export const aboutData = [
     title: "Education",
     info: [
       {
-        title: " National Aerospace University",
-        stage: "2014-2017",
+        
+        title: "IT STEP University",
+        stage: "2017-2020 (Bachelor's degree)",
       }
     ],
   },
